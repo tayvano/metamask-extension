@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { withRouter } from 'react-router-dom';
-import contractMap from '@metamask/contract-metadata';
 import { clearConfirmTransaction } from '../../ducks/confirm-transaction/confirm-transaction.duck';
 
 import {
@@ -29,6 +28,8 @@ import {
   getShouldShowFiat,
   checkNetworkAndAccountSupports1559,
   getPreferences,
+  getUseStaticTokenList,
+  getTokenList,
 } from '../../selectors';
 import { getMostRecentOverviewPage } from '../../ducks/history/history';
 import { transactionMatchesNetwork } from '../../../shared/modules/transaction.utils';
@@ -39,13 +40,6 @@ import {
 } from '../../ducks/metamask/metamask';
 import { getGasLoadingAnimationIsShowing } from '../../ducks/app/app';
 import ConfirmTransactionBase from './confirm-transaction-base.component';
-
-const casedContractMap = Object.keys(contractMap).reduce((acc, base) => {
-  return {
-    ...acc,
-    [base.toLowerCase()]: contractMap[base],
-  };
-}, {});
 
 let customNonceValue = '';
 const customNonceMerge = (txData) =>
@@ -102,9 +96,19 @@ const mapStateToProps = (state, ownProps) => {
   const { name: fromName } = identities[fromAddress];
   const toAddress = propsToAddress || txParamsToAddress;
 
+  const tokenList = getTokenList(state);
+  const useStaticTokenList = getUseStaticTokenList(state);
+  const casedTokenList = useStaticTokenList
+    ? Object.keys(tokenList).reduce((acc, base) => {
+        return {
+          ...acc,
+          [base.toLowerCase()]: tokenList[base],
+        };
+      }, {})
+    : tokenList;
   const toName =
     identities[toAddress]?.name ||
-    casedContractMap[toAddress]?.name ||
+    casedTokenList[toAddress]?.name ||
     shortenAddress(toChecksumHexAddress(toAddress));
 
   const checksummedAddress = toChecksumHexAddress(toAddress);

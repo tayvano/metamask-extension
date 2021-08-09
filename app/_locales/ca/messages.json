@@ -50,9 +50,6 @@
   "addToAddressBookModalPlaceholder": {
     "message": "p. ex. John D."
   },
-  "addTokens": {
-    "message": "Afegeix tokens"
-  },
   "advanced": {
     "message": "Configuració avançada"
   },
@@ -527,7 +524,7 @@
   "letsGoSetUp": {
     "message": "Sí, posem-nos en marxa!"
   },
-  "likeToAddTokens": {
+  "likeToImportTokens": {
     "message": "T'agradaria afegir aquestes fitxes?"
   },
   "links": {

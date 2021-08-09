@@ -50,9 +50,6 @@
   "addToAddressBookModalPlaceholder": {
     "message": "nt John D."
   },
-  "addTokens": {
-    "message": "Lisa lube"
-  },
   "advanced": {
     "message": "Täpsemad"
   },
@@ -536,7 +533,7 @@
   "letsGoSetUp": {
     "message": "Jah, hakkame pihta!"
   },
-  "likeToAddTokens": {
+  "likeToImportTokens": {
     "message": "Kas soovite need load lisada?"
   },
   "links": {

@@ -50,6 +50,9 @@
   "addToAddressBookModalPlaceholder": {
     "message": "pl. John D."
   },
+  "addToken": {
+    "message": "Token hozzáadása"
+  },
   "addTokens": {
     "message": "Érmék hozzáadása"
   },

@@ -50,6 +50,9 @@
   "addToAddressBookModalPlaceholder": {
     "message": "de ex. John D."
   },
+  "addToken": {
+    "message": "Adăugare simbol"
+  },
   "addTokens": {
     "message": "Adăugați token-uri"
   },

@@ -50,6 +50,9 @@
   "addToAddressBookModalPlaceholder": {
     "message": "напр. Джон Д."
   },
+  "addToken": {
+    "message": "Добавяне на жетон"
+  },
   "addTokens": {
     "message": "Добавяне на жетони"
   },

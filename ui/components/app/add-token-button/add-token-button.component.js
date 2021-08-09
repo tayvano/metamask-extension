@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useMetricEvent } from '../../../hooks/useMetricEvent';
 import { useI18nContext } from '../../../hooks/useI18nContext';
-import { ADD_TOKEN_ROUTE } from '../../../helpers/constants/routes';
+import { IMPORT_TOKEN_ROUTE } from '../../../helpers/constants/routes';
 import Button from '../../ui/button';
 
 export default function AddTokenButton() {
@@ -23,7 +23,7 @@ export default function AddTokenButton() {
         type="secondary"
         rounded
         onClick={() => {
-          history.push(ADD_TOKEN_ROUTE);
+          history.push(IMPORT_TOKEN_ROUTE);
           addTokenEvent();
         }}
       >

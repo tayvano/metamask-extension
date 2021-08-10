@@ -94,9 +94,6 @@
   "addToken": {
     "message": "Magdagdag ng Token"
   },
-  "addTokens": {
-    "message": "Magdagdag ng Mga Token"
-  },
   "advanced": {
     "message": "Advanced"
   },
@@ -1028,7 +1025,7 @@
   "letsGoSetUp": {
     "message": "Sige, simulan na nating mag-set up!"
   },
-  "likeToAddTokens": {
+  "likeToImportTokens": {
     "message": "Gusto mo bang idagdag ang mga token na ito?"
   },
   "links": {

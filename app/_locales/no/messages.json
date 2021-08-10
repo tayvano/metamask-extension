@@ -53,9 +53,6 @@
   "addToken": {
     "message": "Legg til token "
   },
-  "addTokens": {
-    "message": "Legg til sjetonger"
-  },
   "advanced": {
     "message": "Avansert"
   },
@@ -530,7 +527,7 @@
   "letsGoSetUp": {
     "message": "Ja, la oss komme i gang!"
   },
-  "likeToAddTokens": {
+  "likeToImportTokens": {
     "message": "Ønsker du å legge til disse tokenene"
   },
   "links": {

@@ -53,9 +53,6 @@
   "addToken": {
     "message": "Добавяне на жетон"
   },
-  "addTokens": {
-    "message": "Добавяне на жетони"
-  },
   "advanced": {
     "message": "Разширени"
   },
@@ -539,7 +536,7 @@
   "letsGoSetUp": {
     "message": "Да, нека да настроим нещата!"
   },
-  "likeToAddTokens": {
+  "likeToImportTokens": {
     "message": "Искате ли да добавите тези жетони?"
   },
   "links": {

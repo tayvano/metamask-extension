@@ -53,9 +53,6 @@
   "addToken": {
     "message": "Adăugare simbol"
   },
-  "addTokens": {
-    "message": "Adăugați token-uri"
-  },
   "advanced": {
     "message": "Avansate"
   },
@@ -533,7 +530,7 @@
   "letsGoSetUp": {
     "message": "Da, hai să configurăm!"
   },
-  "likeToAddTokens": {
+  "likeToImportTokens": {
     "message": "Adăugați aceste indicative?"
   },
   "links": {

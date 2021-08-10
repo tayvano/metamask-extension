@@ -1368,9 +1368,6 @@
   "sendTokens": {
     "message": "Magpadala ng Mga Token"
   },
-  "sentEther": {
-    "message": "nagpadala ng ether"
-  },
   "separateEachWord": {
     "message": "Paghiwa-hiwalayin ang bawat salita gamit ang espasyo"
   },

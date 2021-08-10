@@ -1697,9 +1697,6 @@
   "sendTokens": {
     "message": "トークンの送信"
   },
-  "sentEther": {
-    "message": "Ether の送金"
-  },
   "separateEachWord": {
     "message": "単語ごとにスペースを 1 つ置いて分離します"
   },

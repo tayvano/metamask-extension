@@ -112,6 +112,7 @@ export default class ConfirmTransactionBase extends Component {
     maxFeePerGas: PropTypes.string,
     maxPriorityFeePerGas: PropTypes.string,
     baseFeePerGas: PropTypes.string,
+    nativeCurrency: PropTypes.string,
   };
 
   state = {
@@ -829,6 +830,7 @@ export default class ConfirmTransactionBase extends Component {
       showAccountInHeader,
       txData,
       gasIsLoading,
+      nativeCurrency,
     } = this.props;
     const {
       submitting,
@@ -855,7 +857,7 @@ export default class ConfirmTransactionBase extends Component {
     let functionType = getMethodName(name);
     if (!functionType) {
       if (type) {
-        functionType = getTransactionTypeTitle(t, type);
+        functionType = getTransactionTypeTitle(t, type, nativeCurrency);
       } else {
         functionType = t('contractInteraction');
       }

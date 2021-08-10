@@ -36,6 +36,7 @@ import { toChecksumHexAddress } from '../../../shared/modules/hexstring-utils';
 import {
   updateTransactionGasFees,
   getIsGasEstimatesLoading,
+  getNativeCurrency,
 } from '../../ducks/metamask/metamask';
 import { getGasLoadingAnimationIsShowing } from '../../ducks/app/app';
 import ConfirmTransactionBase from './confirm-transaction-base.component';
@@ -155,6 +156,7 @@ const mapStateToProps = (state, ownProps) => {
   const isEthGasPrice = getIsEthGasPriceFetched(state);
   const noGasPrice = !supportsEIP1599 && getNoGasPriceFetched(state);
   const { useNativeCurrencyAsPrimaryCurrency } = getPreferences(state);
+  const nativeCurrency = getNativeCurrency(state);
 
   return {
     balance,
@@ -201,6 +203,7 @@ const mapStateToProps = (state, ownProps) => {
     maxFeePerGas: gasEstimationObject.maxFeePerGas,
     maxPriorityFeePerGas: gasEstimationObject.maxPriorityFeePerGas,
     baseFeePerGas: gasEstimationObject.baseFeePerGas,
+    nativeCurrency,
   };
 };
 
